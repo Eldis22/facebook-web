@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook web</title>
+  <meta name="description" content="Connectez-vous à Facebook web">
+  <meta property="og:image" content="facebook-logo.png">
+  <link rel="icon" type="image/x-icon" href="facebook-logo.png" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #FFFFFF;
+      margin: 0; /* Ajout de cette ligne pour réinitialiser les marges du body */
+    }
+
+    .logo-animation {
+      width: 250px;
+      height: 250px;
+      background-image: url('facebook-logo.png');
+      background-size: cover;
+      animation: pulse 2s linear infinite;
+      display: flex; /* Ajout de cette ligne pour activer le centrage vertical */
+      justify-content: center; /* Ajout de cette ligne pour centrer horizontalement */
+      align-items: center; /* Ajout de cette ligne pour centrer verticalement */
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-animation"></div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://web.facebook.com";
+    }, 4500);
+  </script>
+</body>
+</ht
+ml>
